@@ -77,10 +77,10 @@ $versions = array(
 
                 'table_column_add' => array(
 
-			array(USERS_TABLE, 'al_fb_id', array('VCHAR', '0')),
+                        array(USERS_TABLE, 'al_fb_id', array('VCHAR', '0')),
                         array(USERS_TABLE, 'al_wl_id', array('VCHAR', '0')),
                         array(USERS_TABLE, 'al_tw_id', array('VCHAR', '0')),
-                        array(USERS_TABLE, 'al_oi_id', array('VCHAR', '0')),
+                        array(USERS_TABLE, 'al_oi_id', array('VCHAR', '0')),                        
                         array(USERS_TABLE, 'al_fb_profile_sync', array('BOOL', '0')),
                         array(USERS_TABLE, 'al_fb_status_sync', array('BOOL', '0')),
                         array(USERS_TABLE, 'al_fb_avatar_sync', array('BOOL', '0')),
@@ -94,7 +94,7 @@ $versions = array(
                         array(USERS_TABLE, 'al_tw_profile_sync', array('BOOL', '0')),
                         array(USERS_TABLE, 'al_tw_status_sync', array('BOOL', '0')),
                         array(USERS_TABLE, 'al_tw_avatar_sync', array('BOOL', '0')),
-                        array(USERS_TABLE, 'session_fb_access_token', array('VCHAR', 'NULL')),
+                        array(USERS_TABLE, 'session_fb_access_token', array('VCHAR', '0')),
 		),
 
             
@@ -105,7 +105,6 @@ $versions = array(
                     array('al_oi_login', 0, 1),
                     array('al_wl_client_id', 0, 1),
                     array('al_wl_secret', 0, 1),
-                    array('al_fb_id', 0, 1),
                     array('al_fb_secret', 0, 1),
                     array('al_site_domain', 0, 1),
                     array('al_fb_facepile', 0, 1),
@@ -117,9 +116,6 @@ $versions = array(
 					array('al_wl_channel', 0, 1),
 					array('al_fb_like_box', 0, 1),
 					array('al_fb_page_url', 0, 1),
-					array('al_tw_id', 0, 1),
-					array('al_fb_id', 0, 1),
-					array('al_wl_id', 0, 1),
                 ),
 
 
