@@ -32,7 +32,7 @@ $mod_name = 'ConSof Alternate Login System';
 * The name of the config variable which will hold the currently installed version
 * UMIL will handle checking, setting, and updating the version itself.
 */
-$version_config_name = '1.0.0';
+$version_config_name = 'al_version';
 
 /*
 * The language file which will be included when installing
@@ -94,7 +94,7 @@ $versions = array(
                         array(USERS_TABLE, 'al_tw_profile_sync', array('BOOL', '0')),
                         array(USERS_TABLE, 'al_tw_status_sync', array('BOOL', '0')),
                         array(USERS_TABLE, 'al_tw_avatar_sync', array('BOOL', '0')),
-                        
+                        array(USERS_TABLE, 'session_fb_access_token', array('VCHAR', 'NULL')),
 		),
 
             
@@ -113,6 +113,13 @@ $versions = array(
                     array('al_fb_stream', 0, 1),
                     array('al_fb_quick_accounts', 0, 1),
 					array('al_wl_quick_accounts', 0, 1),
+					array('al_wl_callback', 0, 1),
+					array('al_wl_channel', 0, 1),
+					array('al_fb_like_box', 0, 1),
+					array('al_fb_page_url', 0, 1),
+					array('al_tw_id', 0, 1),
+					array('al_fb_id', 0, 1),
+					array('al_wl_id', 0, 1),
                 ),
 
 
